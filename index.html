@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>Pet's care</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container-fluid" id="page1">
+            <div class="row">
+                <nav class="navbar navbar-dark bg-dark">
+                    <h1 style="color: lightblue;"><img src="vet_logo.png" height="60" width="60"> Pet's care</h1>
+                  </nav>
+            </div>
+
+            <div class="h-25 d-inline-block"></div><!--make space-->
+
+            <div class="row" id="welcomePage">
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <div class="card text-white bg-secondary mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Address</h5>
+                          <p class="card-subtitle">900 Boyd Ave, Ottawa ON K2A 2E3, Canada</p>
+                          <br>
+                          <h5 class="card-title">Working hours</h5>
+                          <p class="card-subtitle">Monday - Friday</p>
+                          <p class="card-subtitle">8h - 19h</p>
+                          <br>
+                          <p class="card-subtitle">Phone: +1 613 725 1182</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                   <h1 style="color: lightblue; text-align: center;position:top;padding-top: 5%;"> Welcome to <br> Pet's care </h1>
+                    <p><i><h5 style="color: DarkBlue">No one takes care of your companion's health and well being like us</h5></i></p>
+                </div>
+            </div>
+
+            <div class="h-50 d-inline-block"></div><!--make space-->
+
+        </div>
+
+        <div class="container-fluid" id="page2">
+            <div class="row">
+                <div class="col-8">
+                    <!--list of services-->
+                    <h1 style="color: Orange;text-align: center;position: relative;padding-top: 5%;">Our Services</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-4">
+                            <!--service 1-->
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Consultation</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">70 CAD</h5>
+                                  <p class="card-text">We offer basic examination of all body parts: eye, ears, skin, respiration, heartrate, common diseases.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <!--service 2-->
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Vaccinations</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">40 CAD</h5>
+                                  <p class="card-text">Pet's care offers vaccination programs that align with the Canadian Association of Animal Hospital vaccine guidelines.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <!--service 3-->
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">SURGICAL CARE</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">150 CAD</h5>
+                                  <p class="card-text">We provide surgical services ranging from routine cares to more complex procedures like tumour removal.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <!--service 4-->
+                        <div class="col-4">
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">New born examination</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">60 CAD</h5>
+                                  <p class="card-text">Pet's care love seeing new puppys and kittens.We will give your pet a healthy start with a complete examination and advices to take care of them like a pro. We are experienced in pediatric medicine.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <!--service 5-->
+                            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                <div class="card-header">DENTAL CARE</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">80 CAD</h5>
+                                  <p class="card-text">Pet's care is fully equipped with the most sophisticated dental equipment.We offer routine cleanings and dental extractions.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <!--registration form-->
+                    <br><br><br><br>
+                    <div class="form-group card text-white bg-secondary container-fluid">
+                        <br>
+                        <h3 style="text-align: center;">Set an Appointment</h3>
+                        <br>
+                        <input type="firstName" class="form-control" id="firstName"  placeholder="Enter your First name and Last name">
+                        <br>
+                        <input type="lastName" class="form-control" id="lastName"  placeholder="Enter your companion's name">
+                        <br>
+                        <input type="email" class="form-control" id="email"  placeholder="Enter your email address">
+                        <br>
+
+                        <!--time picker-->
+                        <label for="example-datetime-local-input">Pick the date and time</label>
+                        <input class="form-control" type="datetime-local" value="2021-06-13T03:30:00" id="example-datetime-local-input">
+                        <br>
+
+
+                        <!--checkboxes-->
+
+                        <label for="form-check">Select the services that your companion need</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Consultation
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Dental Care
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Newborn consultation
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Parasite Prevention
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Surgical care
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Therapy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Vaccinations
+                            </label>
+                        </div>
+                        <br>
+                        <!--submit button-->
+                        <button type="button" class="btn btn-warning" onclick="confirm()">Submit</button>
+                        <br>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="page3">
+            <br>
+            <div class="row"><h1 style="color: DarkBlue; text-align: center;">Our experts</h1></div>
+            <div class="h-25 d-inline-block"></div><!--make space-->
+            <div class="row">
+            <div class="col-1"></div>
+            <!--person 1-->
+            <div class="col" >
+                <div class="card" style= "width: 18rem; height:25rem">
+                    <img class="card-img-top" src="arnaud.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4> Dr. Steve Smith</h4>
+                      <p class="card-text">Dr. Steve, the owner has openned this clinic in 2003 to live his passion, which is taking care of animals and respond to the high demand of quality service in the city.</p>
+                    </div>
+                  </div>
+            </div>
+            <!--person 2-->
+            <div class="col ">
+                <div class="card" style="width: 18rem; height:25rem">
+                    <img class="card-img-top" src="caroline.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4>Dr. Caroline Malette</h4>
+                      <p class="card-text">She used Zoo Therapy while fighting with a cancer.Since that,she promised to give back the love that she has received by healing the animals as much as she can</p>
+                    </div>
+                  </div>
+            </div>
+            <!--person 3-->
+            <div class="col">
+                <div class="card" style="width:18rem;height:25rem">
+                    <img class="card-img-top" src="melissa.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4>Dr. Melissa Francoise</h4>
+                      <p class="card-text">Melissa is a young possionated veterinarian who is working with since 2019 to give a new healthy life to animals</p>
+                    </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script>
+
+            function confirm(){
+                alert(" to confirm the appointment, an email email will be sent to you.Looking forward seeing you soon")
+            }
+
+        </script>
+        <footer>
+      <p>Website created by "Nafissatu" </p>
+  </footer>
+    </body>
+
+</html>
